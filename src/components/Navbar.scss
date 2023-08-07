@@ -1,0 +1,26 @@
+@import "../Colores";
+
+.navbar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  font-size: 1.1em;
+
+  .navbar-item {
+    width: 14%;
+    padding: 0.6em;
+    border: 1px solid #4B5064FF;
+    text-align: center;
+    color: $blanco;
+    background: $azulSucio;
+    text-decoration: none;
+    transition: background-color 200ms;
+  }
+  a:link, a:visited {
+    color: $blanco;
+  }
+  a:hover {
+    background: $anaranjado;
+    transition: background-color 200ms;
+  }
+}

@@ -1,0 +1,9 @@
+.encabezado {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  .encabezado-first {
+    display: inline-block;
+  }
+}
