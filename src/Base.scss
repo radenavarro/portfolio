@@ -1,0 +1,17 @@
+@import "./Colores";
+
+.button {
+  padding: 0.6em;
+  display: inline-block;
+  border: 1px solid $morado;
+  width: fit-content;
+  cursor: pointer;
+  background-color: rgba($azulSucio, 0.6);
+  border-radius: 8px;
+  transition: background-color 300ms;
+}
+
+.button:hover {
+  background-color: $anaranjado;
+  transition: background-color 300ms;
+}

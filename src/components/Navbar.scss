@@ -5,6 +5,7 @@
   flex-flow: row nowrap;
   justify-content: center;
   font-size: 1.1em;
+  transform: skewX(-200deg);
 
   .navbar-item {
     width: 14%;
@@ -15,6 +16,13 @@
     background: $azulSucio;
     text-decoration: none;
     transition: background-color 200ms;
+  }
+
+  .navbar-item:first-child {
+    border-bottom-left-radius: 8px;
+  }
+  .navbar-item:last-child {
+    border-top-right-radius: 8px;
   }
   a:link, a:visited {
     color: $blanco;

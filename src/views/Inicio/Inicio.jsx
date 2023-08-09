@@ -1,10 +1,11 @@
 import React from "react";
+import Introduccion from "../../components/Introduccion";
 
 const Inicio = (props) => {
 
   return (
-    <div>
-      Inicio
+    <div className={'inicio'}>
+      <Introduccion/>
     </div>
   )
 }

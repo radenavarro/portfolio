@@ -1,9 +1,63 @@
+@import "../Colores";
+
 .encabezado {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 
-  .encabezado-first {
-    display: inline-block;
+  .encabezado-titulo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.8em;
+
+    .encabezado-headers {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      >div:first-child {
+        flex-grow: 1;
+        padding-right: 1em;
+        border-bottom: 6px outset $rosadoClaro;
+        border-right: 6px inset $rosadoClaro;
+      }
+      >div:last-child {
+        flex-grow: 1;
+        padding-left: 1em;
+        align-self: stretch;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-end;
+        border-top: 6px outset $rosadoClaro;
+      }
+    }
+
+    .skew330 {
+      transform: skewX(330deg);
+    }
+
+    h1 {
+      font-size: 3em;
+    }
+    h1, h4 {
+      transform: skewX(30deg);
+    }
+  }
+  .encabezado-social {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    >svg {
+      margin-left: 0.8em;
+    }
+    padding-bottom: 0.6em;
+  }
+
+  .icon {
+    color: white;
+    transition: color 200ms;
+    cursor: pointer;
+  }
+  .icon:hover {
+    color: $anaranjado;
+    transition: color 200ms;
   }
 }

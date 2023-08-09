@@ -7,6 +7,7 @@ import {
   Link,
 } from "react-router-dom";
 import './index.css';
+import './Base.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Inicio from "./views/Inicio/Inicio";
