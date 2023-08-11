@@ -1,0 +1,14 @@
+.blink {
+  -webkit-animation-name: blink;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 100ms;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

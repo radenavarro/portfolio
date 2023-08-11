@@ -33,6 +33,7 @@ const router = createBrowserRouter([
     path: "proyectos",
     element: (
       <>
+        <Encabezado/>
         <Navbar/>
         <Proyectos/>
       </>
@@ -42,6 +43,7 @@ const router = createBrowserRouter([
     path: "habilidades",
     element: (
       <>
+        <Encabezado/>
         <Navbar/>
         <Habilidades/>
       </>
@@ -51,6 +53,7 @@ const router = createBrowserRouter([
     path: "contacto",
     element: (
       <>
+        <Encabezado/>
         <Navbar/>
         <Contacto/>
       </>

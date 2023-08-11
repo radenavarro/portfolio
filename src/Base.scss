@@ -1,8 +1,15 @@
 @import "./Colores";
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .button {
   padding: 0.6em;
-  display: inline-block;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
   border: 1px solid $morado;
   width: fit-content;
   cursor: pointer;

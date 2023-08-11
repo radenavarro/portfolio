@@ -1,0 +1,24 @@
+.opentowork {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: firebrick;
+  //transform: rotate(-45deg);
+  display: flex;
+  flex-flow: row nowrap;
+
+  .opentowork-text {
+    width: fit-content;
+    background-color: goldenrod;
+  }
+
+  .opentowork-leftcorner, .opentowork-rightcorner {
+    width: 24px;
+    background-color: goldenrod;
+  }
+
+  .opentowork-leftcorner {
+
+    //transform: rotate(-45deg) skewX(-45deg);
+  }
+}

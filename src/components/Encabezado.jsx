@@ -1,17 +1,20 @@
 import { FaGoogle, FaGithub } from "react-icons/fa6";
 import "./Encabezado.scss";
+import OpenToWork from "./OpenToWork";
+import MakeItBlink from "./style/MakeItBlink";
 
 const Encabezado = (props) => {
 
   return (
     <div className={'encabezado'}>
+      {/*<OpenToWork/>*/}
       <div className={'encabezado-titulo'}>
         <div className={'encabezado-social'}>
           <FaGoogle className={'icon'}/><FaGithub className={'icon'}/>
         </div>
         <div className={'encabezado-headers'}>
           <div className={'skew330'}>
-            <h1>Raúl De la Paz Navarro</h1>
+            <h1><MakeItBlink timeTillBlink={5000}>Raúl De la Paz Navarro</MakeItBlink></h1>
           </div>
           <div className={'skew330'}>
             <h4>Desarrollador web Full Stack</h4>

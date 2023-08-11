@@ -1,4 +1,5 @@
 import "./Introduccion.scss";
+import {FaHandPointRight} from "react-icons/fa6";
 
 const Introduccion = (props) => {
 
@@ -15,7 +16,7 @@ const Introduccion = (props) => {
           otros como Java. También cuento con algo de experiencia en hardware, reparación de PCs,
           periféricos y redes, y me manejo bien con herramientas de diseño gráfico como Photoshop o Gimp.
         </p>
-        <div className={'button'}>Echa un vistazo a mi trabajo</div>
+        <div className={'button'}><span>Echa un vistazo a mi trabajo</span>&emsp;<FaHandPointRight/></div>
       </div>
     </div>
   )
