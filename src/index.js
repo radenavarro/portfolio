@@ -16,47 +16,41 @@ import Proyectos from "./views/Proyectos/Proyectos";
 import Habilidades from "./views/Habilidades/Habilidades";
 import Navbar from "./components/Navbar";
 import Encabezado from "./components/Encabezado";
+import BgThunders from "./components/style/BgThunders";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <>
-        <Encabezado/>
-        <Navbar/>
+      <App>
         <Inicio/>
-      </>
+      </App>
     )
   },
   {
     path: "proyectos",
     element: (
-      <>
-        <Encabezado/>
-        <Navbar/>
+      <App>
         <Proyectos/>
-      </>
+      </App>
     )
   },
   {
     path: "habilidades",
     element: (
-      <>
-        <Encabezado/>
-        <Navbar/>
+      <App>
         <Habilidades/>
-      </>
+        {/*<BgThunders/>*/}
+      </App>
     )
   },
   {
     path: "contacto",
     element: (
-      <>
-        <Encabezado/>
-        <Navbar/>
+      <App>
         <Contacto/>
-      </>
+      </App>
     )
   }
 ]);

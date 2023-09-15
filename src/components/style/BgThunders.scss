@@ -1,0 +1,14 @@
+
+.thunder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  opacity: 50%;
+  background-image: url("../../img/thunder.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  pointer-events: none;
+}

@@ -9,10 +9,14 @@ body {
   /*background: #1E3799;*/
   padding: 0.6em;
   /*width: 100vw;*/
-  height: 100vh;
+  /*height: 100vh;*/
   display: flex;
   flex-flow: column nowrap;
-  background: linear-gradient(180deg, rgba(92,57,136,1) 0%, rgba(169,130,218,1) 100%);
+  /*touch-action: pan-y;*/
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 code {

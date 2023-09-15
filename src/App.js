@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import {useElementSize} from "@reactuses/core";
+import React, {useRef} from "react";
+import Encabezado from "./components/Encabezado";
+import Navbar from "./components/Navbar";
 
-function App() {
+const App = (props) => {
+  const appRef = useRef();
+  const Dimensions = useElementSize(appRef);
   return (
-    <div className="App">
-      {/*<header className="App-header">*/}
-      {/*  <img src={logo} className="App-logo" alt="logo" />*/}
-      {/*  <p>*/}
-      {/*    Edit <code>src/App.js</code> and save to reload.*/}
-      {/*  </p>*/}
-      {/*  <a*/}
-      {/*    className="App-link"*/}
-      {/*    href="https://reactjs.org"*/}
-      {/*    target="_blank"*/}
-      {/*    rel="noopener noreferrer"*/}
-      {/*  >*/}
-      {/*    Learn React*/}
-      {/*  </a>*/}
-      {/*</header>*/}
+    <div
+      className={"App"}
+      ref={appRef}
+      // style={{height: Dimensions[1] ? `${Dimensions[1]}px` : "100vh"}}
+    >
+      <Encabezado/>
+      <Navbar/>
+      {props.children}
     </div>
   );
 }
