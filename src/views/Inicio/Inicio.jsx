@@ -4,9 +4,9 @@ import Introduccion from "../../components/Introduccion";
 const Inicio = (props) => {
 
   return (
-    <div className={'inicio'}>
+    <article className={'inicio'}>
       <Introduccion/>
-    </div>
+    </article>
   )
 }
 

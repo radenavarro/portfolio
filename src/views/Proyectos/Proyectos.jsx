@@ -3,9 +3,9 @@ import React from "react";
 const Proyectos = (props) => {
 
   return (
-    <div>
+    <article>
       Proyectos
-    </div>
+    </article>
   )
 }
 

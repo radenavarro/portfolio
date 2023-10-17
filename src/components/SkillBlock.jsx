@@ -12,11 +12,11 @@ const SkillBlock = (
     ...props
   }) => {
   return (
-    <div className={`habilidades-bloque`}>
+    <aside className={`habilidades-bloque`}>
       <div className={'habilidades-bloque-encabezado'}>
         <DevIcon name={icon} size={iconSize}/> <h2>{skillname}</h2> <Rating value={rating}/>
       </div>
-    </div>
+    </aside>
   )
 }
 

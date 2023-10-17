@@ -6,6 +6,8 @@
 }
 
 .button {
+  color: white;
+  font-size: 1em;
   padding: 0.6em;
   display: flex;
   flex-flow: row nowrap;
@@ -47,11 +49,15 @@
   }
 }
 
-.App {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+body {
+  //position: absolute;
+  //top: 0;
+  //right: 0;
+  //left: 0;
+  //bottom: 0;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  min-width: 100vw;
   background: linear-gradient(180deg, rgba(92,57,136,1) 0%, rgba(169,130,218,1) 100%);
 }

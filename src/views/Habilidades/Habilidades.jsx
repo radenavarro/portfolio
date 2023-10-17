@@ -6,9 +6,9 @@ import SkillBlock from "../../components/SkillBlock";
 const Habilidades = (props) => {
 
   return (
-    <div className={'habilidades'}>
+    <article className={'habilidades'}>
       <h2>FRAMEWORKS</h2>
-      <div className={'habilidades-grupo slidefrom-left'}>
+      <section className={'habilidades-grupo slidefrom-left'}>
         <SkillBlock
           icon={"devicon-react-original"}
           iconSize={50}
@@ -33,10 +33,10 @@ const Habilidades = (props) => {
           skillname={"ANGULAR"}
           rating={4}
         />
-      </div>
+      </section>
       <br/>
       <h2>LENGUAJES</h2>
-      <div className={"habilidades-grupo slidefrom-right"}>
+      <section className={"habilidades-grupo slidefrom-right"}>
         <SkillBlock
           icon={"devicon-html5-plain"}
           iconSize={50}
@@ -67,10 +67,10 @@ const Habilidades = (props) => {
           skillname={"JAVA"}
           rating={4}
         />
-      </div>
+      </section>
       <br/>
       <h2>HERRAMIENTAS</h2>
-      <div className={'habilidades-grupo slidefrom-left'}>
+      <section className={'habilidades-grupo slidefrom-left'}>
         <SkillBlock
           icon={"devicon-git-plain"}
           iconSize={50}
@@ -113,8 +113,8 @@ const Habilidades = (props) => {
           skillname={"AMAZON WEBSERVICES"}
           rating={3}
         />
-      </div>
-    </div>
+      </section>
+    </article>
   )
 }
 

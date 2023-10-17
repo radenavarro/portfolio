@@ -4,9 +4,9 @@ import {FaHandPointRight} from "react-icons/fa6";
 const Introduccion = (props) => {
 
   return (
-    <div className={'introduccion'}>
+    <article className={'introduccion'}>
       <div className={'introduccion-imagen'}></div>
-      <div className={'introduccion-texto'}>
+      <section className={'introduccion-texto'}>
         <h2>BIENVENID@</h2>
         <p>
           Soy un programador web titulado en el ciclo superior de Desarrollo de
@@ -16,9 +16,10 @@ const Introduccion = (props) => {
           otros como Java. También cuento con algo de experiencia en hardware, reparación de PCs,
           periféricos y redes, y me manejo bien con herramientas de diseño gráfico como Photoshop o Gimp.
         </p>
-        <div className={'button'}><span>Echa un vistazo a mi trabajo</span>&emsp;<FaHandPointRight/></div>
-      </div>
-    </div>
+        {/*<div className={'button'}><span>Echa un vistazo a mi trabajo</span>&emsp;<FaHandPointRight/></div>*/}
+        <button className={'button'}>Echa un vistazo a mi trabajo&emsp;<FaHandPointRight/></button>
+      </section>
+    </article>
   )
 }
 
