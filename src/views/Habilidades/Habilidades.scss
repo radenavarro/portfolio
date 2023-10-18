@@ -4,13 +4,22 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+  padding-bottom: 4em;
+
   .habilidades-grupo {
     display: flex;
     flex-flow: row wrap;
     width: 80%;
     margin: 0 auto;
     .habilidades-bloque {
+      position: relative;
       width: 33%;
+      @media(max-width: 1280px){
+        width: 50%;
+      }
+      @media(max-width: 900px) {
+        width: 100%;
+      }
       .habilidades-bloque-encabezado {
         border-left: 1px solid white;
         display: flex;

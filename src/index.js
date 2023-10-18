@@ -18,7 +18,7 @@ import Navbar from "./components/Navbar";
 import Encabezado from "./components/Encabezado";
 import BgThunders from "./components/style/BgThunders";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
   {
     path: "/",

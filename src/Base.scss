@@ -31,6 +31,18 @@
   -webkit-animation-timing-function: linear;
 }
 
+.clickable {
+  cursor: pointer;
+}
+
+// HEADERS
+
+h1, h2, h3, h4, h5, h6 {
+  //color: #f9b8ff;
+  //color: greenyellow;
+  color: #abf0ff;
+}
+
 @keyframes backflip {
   0% {
     transform: rotate(0deg);

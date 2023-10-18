@@ -12,11 +12,11 @@ const Rating = (
     let starValue = value / 2;
     let emptyStars = limit - starValue;
     for (let i = 1; i <= starValue; i++) {
-      stars.push(<FaStar/>)
+      stars.push(<FaStar key={stars.length}/>)
     }
-    if (value % 2 !== 0) stars.push(<FaRegStarHalfStroke/>);
+    if (value % 2 !== 0) stars.push(<FaRegStarHalfStroke key={stars.length} />);
     for (let j = 1; j <= emptyStars; j++) {
-      stars.push(<FaRegStar/>)
+      stars.push(<FaRegStar key={stars.length}/>)
     }
     return stars
   }

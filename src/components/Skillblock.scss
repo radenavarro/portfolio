@@ -1,0 +1,41 @@
+@import "../Colores";
+.skillblock-popup {
+  z-index: 100;
+  padding: 0.4em;
+  position: absolute;
+  min-width: 164px;
+  min-height: 32px;
+  height: fit-content;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background: rgba(0, 0, 0, 0.8);
+  color: $anaranjadoClaro;
+  text-align: left;
+
+  a {
+    text-decoration: none;
+    &:link {
+      color: $anaranjado;
+    }
+    &:visited {
+      color: $anaranjado;
+    }
+  }
+}
+
+.habilidades-bloque {
+  summary.habilidades-bloque-encabezado {
+    >* {
+      color: white;
+    }
+  }
+}
+
+details[open] summary ~ * {
+  animation: sweep 300ms ease-in-out;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; margin-left: -10px}
+  100%  {opacity: 1; margin-left: 0}
+}
