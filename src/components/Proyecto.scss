@@ -1,0 +1,18 @@
+.proyecto {
+  width: 90%;
+  border: 1px solid rgba(#abf0ff, 0.2);
+  border-radius: 8px;
+  >h3, >div {
+    padding: 0.6em;
+  }
+  h3 {
+    border-bottom: 1px solid rgba(#abf0ff, 0.2);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .devicon:hover {
+    animation: none;
+  }
+}

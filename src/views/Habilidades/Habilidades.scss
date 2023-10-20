@@ -1,3 +1,5 @@
+@import "src/animations";
+
 .habilidades {
   //width: 80%;
   padding-top: 1em;
@@ -43,32 +45,10 @@
     -webkit-animation-timing-function: ease-in-out;
   }
 
-  @keyframes slideleft {
-    0% {
-      margin: 0 auto 0 0;
-    }
-    99% {
-      margin: 0 auto 0 10%;
-    }
-    100% {
-      margin: 0 auto 0 auto;
-    }
-  }
   .slidefrom-right {
     -webkit-animation-name: slideright;
     -webkit-animation-duration: 200ms;
     -webkit-animation-timing-function: ease-in-out;
   }
 
-  @keyframes slideright {
-    0% {
-      margin: 0 0 0 auto;
-    }
-    99% {
-      margin: 0 10% 0 auto;
-    }
-    100% {
-      margin: 0 auto 0 auto;
-    }
-  }
 }

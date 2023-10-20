@@ -1,6 +1,5 @@
 import React from "react";
 import "./Habilidades.scss";
-import DevIcon from "../../components/style/DevIcon";
 import SkillBlock from "../../components/SkillBlock";
 
 const Habilidades = (props) => {
@@ -32,7 +31,7 @@ const Habilidades = (props) => {
             <section className={'skillblock-detailpopup'}>
               <small>
                 <strong>Cuento con 4 años de experiencia laboral con Laravel</strong>, durante los cuales desarrollé
-                prácticamente de forma íntegra una API rest de un ERP orientado a cocina.
+                desde 0 la API rest de un ERP orientado a cocina.
               </small>
             </section>
           )}

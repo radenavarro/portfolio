@@ -73,3 +73,20 @@ body {
   min-width: 100vw;
   background: linear-gradient(180deg, rgba(92,57,136,1) 0%, rgba(169,130,218,1) 100%);
 }
+
+.pb1 {
+  padding-bottom: 1em;
+}
+
+a {
+  &:link, &:visited {
+    color: $anaranjadoClaro;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 300ms;
+  }
+  &:hover {
+    color: $anaranjado;
+    transition: color 300ms;
+  }
+}

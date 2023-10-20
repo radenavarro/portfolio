@@ -1,5 +1,6 @@
 import React from "react";
 import Introduccion from "../../components/Introduccion";
+import "./Inicio.scss";
 
 const Inicio = (props) => {
 

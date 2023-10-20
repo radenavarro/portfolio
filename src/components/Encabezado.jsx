@@ -16,7 +16,7 @@ const Encabezado = (props) => {
           <div className={'skew330'}>
             <h1><MakeItBlink timeTillBlink={5000}>Raúl De la Paz Navarro</MakeItBlink></h1>
           </div>
-          <div className={'skew330'}>
+          <div className={'skew330 pb1'}>
             <h4>Desarrollador web Full Stack</h4>
           </div>
         </section>
