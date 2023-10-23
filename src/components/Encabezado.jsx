@@ -1,3 +1,4 @@
+import React from "react";
 import { FaGoogle, FaGithub } from "react-icons/fa6";
 import "./Encabezado.scss";
 import OpenToWork from "./OpenToWork";

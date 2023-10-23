@@ -1,4 +1,4 @@
-
+import React from "react";
 import "./BgThunders.scss";
 const BgThunders = (props) => {
 

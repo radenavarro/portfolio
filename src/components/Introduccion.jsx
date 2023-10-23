@@ -1,3 +1,4 @@
+import React from "react";
 import "./Introduccion.scss";
 import {FaHandPointRight} from "react-icons/fa6";
 

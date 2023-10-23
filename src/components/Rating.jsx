@@ -1,3 +1,4 @@
+import React from "react";
 import {FaRegStarHalfStroke, FaStar, FaRegStar} from "react-icons/fa6";
 
 const Rating = (
