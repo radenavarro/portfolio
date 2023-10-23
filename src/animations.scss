@@ -31,3 +31,8 @@
   0% {opacity: 0; font-size: 2em}
   100% {opacity: 1; font-size: 1em}
 }
+
+@keyframes blurredText {
+  0% {color: transparent; text-shadow: 0 0 0.2em white}
+  100% {color: inherit; text-shadow: 0 0 0 white}
+}

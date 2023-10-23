@@ -1,54 +1,54 @@
 import React, {useEffect} from 'react';
 import { loadCaptchaEnginge, LoadCanvasTemplate, LoadCanvasTemplateNoReload, validateCaptcha } from 'react-simple-captcha';
+import "./Captcha.scss";
 
 
-
-const Captcha = (props) => {
+const Captcha = (
+  {
+    onOk = () => {},
+    onFail = () => {},
+    ...props
+  }
+) => {
 
   useEffect(() => {
     loadCaptchaEnginge(6);
   }, [])
 
-  const doSubmit = () => {
+  const submitCaptcha = () => {
     let user_captcha = document.getElementById('user_captcha_input').value;
 
-    if (validateCaptcha(user_captcha)===true) {
-      alert('Captcha Matched');
+    if (validateCaptcha(user_captcha) === true) {
       loadCaptchaEnginge(6);
       document.getElementById('user_captcha_input').value = "";
+      onOk();
     }
 
     else {
-      alert('Captcha Does Not Match');
+      alert('El captcha no concuerda');
       document.getElementById('user_captcha_input').value = "";
+      onFail()
     }
   };
 
   return (
-    <div>
-      <div className="container">
-        <div className="form-group">
+    <article className={"captcha"}>
+      <section className={"captcha-reload"}>
+        <LoadCanvasTemplate
+          reloadText={"Recargar captcha"}
+          reloadColor={"#f3d5a7"}
+        />
+      </section>
 
-          <div className="col mt-3">
-            <LoadCanvasTemplate />
-          </div>
+      <section className={"captcha-input"}>
+        <input placeholder="Introduce val. captcha" id="user_captcha_input" name="user_captcha_input" type="text"></input>
+      </section>
 
-          <div className="col mt-3">
-            <div>
-              <input placeholder="Enter Captcha Value" id="user_captcha_input" name="user_captcha_input" type="text"></input>
-            </div>
-          </div>
-
-          <div className="col mt-3">
-            <div>
-              <button className="btn btn-primary" onClick={() => doSubmit()}>Submit</button>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </div>);
+      <section className={"captcha-submit"}>
+        <button className="button" onClick={() => submitCaptcha()}>Validar</button>
+      </section>
+    </article>
+  );
 }
 
 export default Captcha;
