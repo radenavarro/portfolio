@@ -25,7 +25,6 @@ const Captcha = (
     }
 
     else {
-      alert('El captcha no concuerda');
       document.getElementById('user_captcha_input').value = "";
       onFail()
     }
