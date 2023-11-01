@@ -2,7 +2,7 @@ import React from "react";
 import { FaGoogle, FaGithub } from "react-icons/fa6";
 import "./Encabezado.scss";
 import OpenToWork from "./OpenToWork";
-import MakeItBlink from "./style/MakeItBlink";
+import TimedToggleClass from "./style/TimedToggleClass";
 
 const Encabezado = (props) => {
 
@@ -15,7 +15,11 @@ const Encabezado = (props) => {
         </section>
         <section className={'encabezado-headers'}>
           <div className={'skew330'}>
-            <h1><MakeItBlink timeTillBlink={5000}>Raúl De la Paz Navarro</MakeItBlink></h1>
+            <h1>
+              <TimedToggleClass timeTillToggle={5000} defaultClass={''} swapClass={'blink'} swapClassMilliseconds={200}>
+                Raúl De la Paz Navarro
+              </TimedToggleClass>
+            </h1>
           </div>
           <div className={'skew330 pb1'}>
             <h4>Desarrollador web Full Stack</h4>

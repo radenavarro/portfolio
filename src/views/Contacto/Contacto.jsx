@@ -52,15 +52,18 @@ const Contacto = (props) => {
     setValidCaptcha(false);
   }
 
-  const handleSubmit = (ev) => {
-    ev.preventDefault();
-    // window.open("mailto:" + email + "?subject=" + asunto + "?body=" + contenidoEmail);
-  }
-
   return (
     <article className={"contacto"}>
       <ToastContainer/>
       <h2>CONTACTO</h2>
+      <section className={'contacto-texto'}>
+        <p>Si tienes alguna pregunta o comentario sobre mi trabajo, estaré encantado de ayudarte a través de cualquiera de los siguientes canales:</p>
+        <br/>
+        <ul>
+          <li><strong>Correo electrónico:</strong> escríbeme a través de la dirección de correo electrónico que encontrarás en la parte superior derecha de esta página.</li>
+          <li><strong>Formulario de contacto:</strong> si prefieres un método más visual, puedes enviarme un mensaje a través del formulario de contacto que encontrarás a continuación (requiere captcha).</li>
+        </ul>
+      </section>
       {!validCaptcha && (
         <>
           <br/>
@@ -74,23 +77,6 @@ const Contacto = (props) => {
 
       {validCaptcha && (
         <>
-          <p>
-            Si quieres ponerte en contacto conmigo, puedes hacerlo a través de correo electrónico en la parte superior derecha de la pantalla,
-            o bien a través del pequeño formulario que aparece a continuación.
-          </p>
-          {/*<form className={'contacto-form'}>*/}
-          {/*  <label>*/}
-          {/*    <span>Asunto: </span>*/}
-          {/*    <input type="text" placeholder={"Tu asunto aquí"} className={'contacto-asunto'} onChange={handleAsuntoChange}/>*/}
-          {/*  </label>*/}
-          {/*  <textarea*/}
-          {/*    className={"contacto-email"}*/}
-          {/*    placeholder={"El contenido de tu e-mail aquí"}*/}
-          {/*    id="contacto-email"*/}
-          {/*    onChange={handleTextareaChange}*/}
-          {/*  ></textarea>*/}
-          {/*  <button className={"button"} onClick={handleSubmit}>Enviar</button>*/}
-          {/*</form>*/}
           <Form/>
         </>
       )}

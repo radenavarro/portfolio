@@ -21,7 +21,7 @@ export const Form = () => {
   return (
     <form className={'contacto-form'} ref={form} onSubmit={sendEmail}>
       <label>
-        <input type="text" name="to_name" value={"Radena"} hidden />
+        <input type="text" name="to_name" value={"Radena"} readOnly hidden />
       </label>
       <label>
         <span>Tu nombre</span>

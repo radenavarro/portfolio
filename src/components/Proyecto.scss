@@ -11,8 +11,12 @@
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-end;
+    gap: 0.3em;
   }
   .devicon:hover {
     animation: none;
+  }
+  i {
+    display: block;
   }
 }

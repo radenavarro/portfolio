@@ -1,4 +1,5 @@
 @import "src/animations";
+@import "src/Colores";
 
 .habilidades {
   //width: 80%;
@@ -23,6 +24,7 @@
         width: 100%;
       }
       .habilidades-bloque-encabezado {
+        padding: 0.4em;
         border-left: 1px solid white;
         display: flex;
         flex-flow: row nowrap;
@@ -50,5 +52,4 @@
     -webkit-animation-duration: 200ms;
     -webkit-animation-timing-function: ease-in-out;
   }
-
 }
