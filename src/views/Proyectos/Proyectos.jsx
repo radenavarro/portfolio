@@ -4,6 +4,12 @@ import Proyecto from "../../components/Proyecto";
 import DevIcon from "../../components/style/DevIcon";
 
 const Proyectos = (props) => {
+  const images = {
+    npcook : {
+      src: "https://noproblem.es/wp-content/uploads/2020/09/no-problem-cooking-desde-cualquier-dispotivos-2-e1600673230394.jpg",
+      alt: "Imagen No problem cooking"
+    }
+  };
 
   return (
     <article className={'proyectos'}>
@@ -20,11 +26,20 @@ const Proyectos = (props) => {
             <DevIcon key={"php"} name={"devicon-php-plain"}/>,
             <DevIcon key={"mysql"} name={"devicon-mysql-plain"}/>,
           ]}
+          screens={[
+            images.npcook
+          ]}
+          videos={[
+            "https://www.youtube.com/playlist?list=PLw2WnExdxUAY5DEp3EDOMJfybksmsp_dk"
+          ]}
         >
           <p>
-            ERP orientado inicialmente a comedores escolares, y posteriormente adaptado a otros ámbitos como hospitales o
-            cocinas centrales. El frontend está desarrollado con React (Javascript), y el backend en Laravel (PHP). He sido
-            el principal desarrollador tanto en frontend como en backend.
+            <a href={"https://es.wikipedia.org/wiki/Sistema_de_planificaci%C3%B3n_de_recursos_empresariales"}>ERP</a> orientado inicialmente
+            a comedores escolares, y posteriormente adaptado a otros ámbitos como hospitales o cocinas centrales. El frontend
+            está desarrollado con <a href={"https://es.react.dev/"}>React</a> (Javascript), y el backend en <a href={"https://laravel.com/"}>Laravel</a> (PHP).
+          </p>
+          <p>
+            He sido el principal desarrollador tanto en frontend como en backend.
           </p>
         </Proyecto>
         <Proyecto
@@ -47,6 +62,9 @@ const Proyectos = (props) => {
             <DevIcon key={"html5"} name={"devicon-html5-plain"}/>,
             <DevIcon key={"css3"} name={"devicon-css3-plain"}/>,
             <DevIcon key={"js"} name={"devicon-javascript-plain"}/>,
+          ]}
+          videos={[
+            "https://www.youtube.com/watch?v=AuXK77gEvtk"
           ]}
         >
           <p>

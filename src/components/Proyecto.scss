@@ -1,7 +1,10 @@
+@import "../Colores.scss";
+
 .proyecto {
   width: 90%;
   border: 1px solid rgba(#abf0ff, 0.2);
   border-radius: 8px;
+  overflow: hidden;
   >h3, >div {
     padding: 0.6em;
   }
@@ -12,11 +15,70 @@
     justify-content: center;
     align-items: flex-end;
     gap: 0.3em;
+    background: radial-gradient($moradoClaro, $morado);
   }
   .devicon:hover {
     animation: none;
   }
   i {
     display: block;
+  }
+
+  img {
+    max-width: 100px;
+    height: auto;
+  }
+
+  .proyecto-links {
+    padding: 0 0.6em;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background: radial-gradient($moradoClaro, $morado);
+    div {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      > * {
+        flex-basis: 100px;
+      }
+      > a {
+        color: white;
+        &:hover {
+          color: rgb(255 0 0);
+        }
+        svg {
+          width: 64px;
+          height: auto;
+          filter: drop-shadow(0 0 4px rgb(0 0 0 / 0.4));
+        }
+      }
+    }
+
+    img {
+      opacity: 50%;
+      transition: opacity 300ms;
+      &:hover {
+        cursor: pointer;
+        opacity: 100%;
+        transition: opacity 300ms;
+      }
+    }
+  }
+
+  img.proyecto-img-modal {
+    min-width: 100%;
+    height: auto;
+  }
+
+  .proyecto-text-container {
+    >p {
+      padding: 0 0.8em 0.8em 0.8em;
+      text-align: left;
+    }
+    >p:first-child {
+      padding-top: 0.8em;
+    }
   }
 }

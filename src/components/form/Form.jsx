@@ -28,7 +28,7 @@ export const Form = () => {
         <input className={'contacto-inputtext'} type="text" name="from_name" />
       </label>
       <label>
-        <span>Tu e-mail</span>
+        <span>Tu dirección e-mail</span>
         <input className={'contacto-inputtext'} type="email" name="from_email" />
       </label>
       <label>

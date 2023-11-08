@@ -10,8 +10,6 @@ const Contacto = (props) => {
 
   const [validCaptcha, setValidCaptcha] = useState(false);
 
-  const email = import.meta.env.VITE_EMAIL;
-
   const handleCaptchaOk = () => {
     toast(
       <header className={'toast-header'}>
@@ -57,7 +55,7 @@ const Contacto = (props) => {
       <ToastContainer/>
       <h2>CONTACTO</h2>
       <section className={'contacto-texto'}>
-        <p>Si tienes alguna pregunta o comentario sobre mi trabajo, estaré encantado de ayudarte a través de cualquiera de los siguientes canales:</p>
+        <p>Si tienes alguna pregunta o comentario sobre mi trabajo, estaré encantado de ayudarte a través de cualquiera de los siguientes medios:</p>
         <br/>
         <ul>
           <li><strong>Correo electrónico:</strong> escríbeme a través de la dirección de correo electrónico que encontrarás en la parte superior derecha de esta página.</li>
