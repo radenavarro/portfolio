@@ -4,6 +4,7 @@ import {useElementSize} from "@reactuses/core";
 import React, {useRef} from "react";
 import Encabezado from "./components/Encabezado";
 import Navbar from "./components/Navbar";
+import NavbarLite from "./components/NavbarHeader/NavbarLite";
 
 const App = (props) => {
   const appRef = useRef();
@@ -14,8 +15,9 @@ const App = (props) => {
       ref={appRef}
       // style={{height: Dimensions[1] ? `${Dimensions[1]}px` : "100vh"}}
     >
-      <Encabezado/>
-      <Navbar/>
+      {/*<Encabezado/>*/}
+      {/*<Navbar/>*/}
+      <NavbarLite/>
       {props.children}
     </div>
   );
