@@ -1,16 +1,7 @@
 .introduccion {
   margin: 1em auto 0 auto;
   position: relative;
-  //height: auto;
-  //min-height: 384px;
   .introduccion-texto, .introduccion-imagen {
-    position: absolute;
-    //width: 100%;
-    //height: 100%;
-    //display: flex;
-    //flex-flow: column nowrap;
-    //padding: 1em;
-    //box-sizing: border-box;
     h2 {
       align-self: center;
       font-size: 2em;
@@ -23,16 +14,5 @@
         line-height: 1.3em;
       }
     }
-  }
-  .introduccion-imagen {
-    background-image: url("../img/intro.jpg");
-    width: 100%;
-    background-size: cover;
-    opacity: 20%;
-    background-attachment: fixed;
-  }
-  .introduccion-texto {
-    width: 80%;
-    margin: 0 10% 0 10%;
   }
 }
