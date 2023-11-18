@@ -1,0 +1,27 @@
+
+.hamburguer {
+  display: none;
+  position: relative;
+  background-color: inherit;
+  .hamburguer-icon {
+    height: 100%;
+    transition: transform 300ms;
+  }
+  .hamburguer-menu {
+    top: 40px;
+    list-style: none;
+    position: absolute;
+    background-color: inherit;
+    >li {
+      padding: 0.6em;
+    }
+  }
+}
+
+@media (width <= 700px) {
+  .hamburguer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+}

@@ -3,6 +3,7 @@
 .navbar-lite {
   position: sticky;
   top: 0;
+  height: 40px;
   background-color: black;
   z-index: 1000;
   display: flex;
@@ -27,6 +28,13 @@
       }
     }
   }
+
+  @media(width <= 700px) {
+    .navbar-links {
+      display: none;
+    }
+  }
+
   .navbar-social {
     justify-content: flex-end;
     gap: 0;
