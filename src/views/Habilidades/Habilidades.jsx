@@ -173,6 +173,20 @@ const Habilidades = (props) => {
           )}
         />
         <SkillBlock
+          // icon={"devicon-redux-plain"}
+          iconSize={50}
+          skillname={"ZUSTAND"}
+          rating={7}
+          comment={(
+            <section className={'skillblock-detailpopup'}>
+              <small>
+                He trabajado con Zustand como forma de manejar el estado de componentes en mi app <strong>Lista de la compra</strong>, siendo
+                bastante más simple y sencillo de manejar que Redux.
+              </small>
+            </section>
+          )}
+        />
+        <SkillBlock
           icon={"devicon-mysql-plain"}
           iconSize={50}
           skillname={"MYSQL"}

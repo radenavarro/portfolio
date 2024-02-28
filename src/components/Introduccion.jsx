@@ -5,16 +5,18 @@ import Hero from "./Hero";
 import {FaSmile} from "react-icons/fa";
 import {useDimensions} from "../hooks/useDimensions";
 import {styled} from "styled-components";
+import {useNavigate} from "react-router-dom";
 
 const Introduccion = (props) => {
 
   const textSection = useRef();
   const textSectionDimensions = useDimensions(textSection);
+  const navigate = useNavigate();
 
   // STYLED COMPONENTS
   const Background = styled.div`
     position: absolute;
-    background-image: url("src/img/intro.jpg");
+    background-image: url("src/img/intro.webp");
     width: 100%;
     background-size: cover;
     opacity: 20%;
@@ -37,6 +39,15 @@ const Introduccion = (props) => {
     }
   `
 
+  const handleButtonClick = async () => {
+    console.log("bfore")
+    try {
+      navigate("./proyectos")
+    } catch (e) {
+      console.error(e)
+    }
+  }
+
   return (
     <article className={'introduccion'}>
       <Hero/>
@@ -44,7 +55,7 @@ const Introduccion = (props) => {
       <div>
         <Background className={'introduccion-imagen'}></Background>
         <WelcomeText className={'introduccion-texto'} ref={textSection}>
-          <h2>BIENVENID@ A MI PORTAFOLIO</h2>
+          <h2>BIENVENID@</h2>
           <ul>
             <li>
               Soy un programador web titulado en el ciclo superior de Desarrollo de Aplicaciones Web <em>(DAW)</em>.
@@ -60,7 +71,7 @@ const Introduccion = (props) => {
               de dicho trabajo, puedes hacerlo desde la sección de contacto o a través del enlace en la parte superior derecha <FaSmile color={"yellow"}/>.
             </li>
           </ul>
-          <button className={'button'}>Echa un vistazo a mi trabajo&emsp;<FaHandPointRight/></button>
+          <button className={'button'} onClick={()=>handleButtonClick()}>Echa un vistazo a mi trabajo&emsp;<FaHandPointRight/></button>
         </WelcomeText>
         <AbsoluteFiller></AbsoluteFiller>
       </div>

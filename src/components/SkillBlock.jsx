@@ -1,4 +1,4 @@
-import React, {useRef, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import DevIcon from "./style/DevIcon";
 import Rating from "./Rating";
 import "./Skillblock.scss";
@@ -15,14 +15,16 @@ const SkillBlock = (
   }) => {
 
   const [detailsOpened, setDetailsOpened] = useState(false);
+  const details = useRef();
 
-  const handleDetailsClick = () => {
-    setDetailsOpened(!detailsOpened);
-  }
+  useEffect(() => {
+    let isCurrentlyOpened = details.current?.open ?? false;
+    setDetailsOpened(!isCurrentlyOpened)
+  }, [details.current?.open])
 
   return (
     <aside className={`habilidades-bloque ${!!comment ? 'clickable' : ''}`}>
-      <details onClick={() => handleDetailsClick()}>
+      <details ref={details}>
         <summary className={'habilidades-bloque-encabezado'}>
           <DevIcon name={icon} size={iconSize} color={iconColor} /> <h2>{skillname}</h2> <Rating value={rating}/>
         </summary>

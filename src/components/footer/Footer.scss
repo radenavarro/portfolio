@@ -1,0 +1,18 @@
+@import "../../Colores";
+.footer {
+  margin-top: 64px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  //gap: 16px;
+  background-color: $morado;
+
+  .footer-subsection {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 32px;
+  }
+  .footer-subsection:first-child {
+    border-right: 1px dotted black;
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../animations";
+
+.sobre-mi-container {
+  width: 80%;
+  margin-top: 32px;
+  padding-top: 32px;
+  margin-inline: auto;
+  animation: fadeIn 0.3s linear forwards;
+  line-height: 1.4em;
+  h2 {
+    //color: black;
+    padding-bottom: 8px;
+  }
+  p {
+    padding-block: 8px;
+    text-align: left;
+    //color: black;
+  }
+  .sobre-mi-img {
+    width: 256px;
+    height: 256px;
+    //background: #282c34;
+    float: right;
+    border-radius: 50%;
+    background-image: url("../../img/radena.webp");
+    background-size: cover;
+    transform: scaleX(-1);
+  }
+}

@@ -58,7 +58,11 @@ const Contacto = (props) => {
         <p>Si tienes alguna pregunta o comentario sobre mi trabajo, estaré encantado de ayudarte a través de cualquiera de los siguientes medios:</p>
         <br/>
         <ul>
-          <li><strong>Correo electrónico:</strong> escríbeme a través de la dirección de correo electrónico que encontrarás en la parte superior derecha de esta página.</li>
+          <li>
+            <strong>Correo electrónico:</strong> escríbeme a través de la dirección de correo electrónico que encontrarás en la parte superior derecha de esta página. Ten en
+            cuenta, eso sí, que la dirección de e-mail tiene una codificación simple para evitar spambots: la @ aparece como {"&#64;"} mientras que el punto aparece
+            como {"&#46;"}.
+          </li>
           <li><strong>Formulario de contacto:</strong> si prefieres un método más visual, puedes enviarme un mensaje a través del formulario de contacto que encontrarás a continuación (requiere captcha).</li>
         </ul>
       </section>
