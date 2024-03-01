@@ -63,7 +63,7 @@ const Contacto = (props) => {
             cuenta, eso sí, que la dirección de e-mail tiene una codificación simple para evitar spambots: la @ aparece como {"&#64;"} mientras que el punto aparece
             como {"&#46;"}.
           </li>
-          <li><strong>Formulario de contacto:</strong> si prefieres un método más visual, puedes enviarme un mensaje a través del formulario de contacto que encontrarás a continuación (requiere captcha).</li>
+          <li><strong>Formulario de contacto:</strong> si prefieres contactarme desde este mismo sitio, puedes enviarme un mensaje a través del formulario de contacto que encontrarás a continuación (requiere captcha).</li>
         </ul>
       </section>
       {!validCaptcha && (
