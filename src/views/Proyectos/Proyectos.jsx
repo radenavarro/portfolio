@@ -69,7 +69,7 @@ const Proyectos = (props) => {
         html: (
           <Proyecto
             year={"2019-2023"}
-            header={"No problem cooking"}
+            header={"Cooking"}
             relevance={10}
             icons={[
               <DevIcon key={"react"} name={"devicon-react-plain"} title={"React"}/>,
@@ -89,7 +89,7 @@ const Proyectos = (props) => {
               inicialmente
               a comedores escolares, y posteriormente adaptado a otros ámbitos como hospitales o cocinas centrales. El
               frontend
-              está desarrollado con <a href={"https://es.react.dev/"}>React</a> (Javascript), y el backend en <a
+              está desarrollado con <a href={"https://es.react.dev/"}>React</a> (Javascript), y el backend con <a
               href={"https://laravel.com/"}>Laravel</a> (PHP).
             </p>
             <p>
@@ -124,7 +124,7 @@ const Proyectos = (props) => {
         html: (
           <Proyecto
             year={"2023"}
-            header={"No problem PDA almacén"}
+            header={"PDA almacén"}
             relevance={6}
             icons={[
               <DevIcon key={"android"} name={"devicon-android-plain"} title={"Android"}/>,
@@ -341,7 +341,7 @@ const Proyectos = (props) => {
           <Proyecto
             key={'9'}
             year={2020}
-            header={"BB Player spoilerer"}
+            header={"Buzzerdata"}
             relevance={7}
             icons={[
               <DevIcon key={"react"} name={"devicon-react-plain"} title={"React"}/>,
@@ -351,15 +351,19 @@ const Proyectos = (props) => {
               <DevIcon key={"mysql"} name={"devicon-mysql-plain"} title={"MySQL"}/>,
             ]}
           >
-            <p>
-              App con frontend hecho con <a href={"https://es.react.dev/"}>React</a> y backend hecho con <a
-              href="https://expressjs.com/es/">Express</a>,
-              que consiste en una base de datos actualizable de jugadores del juego online <a
-              href="https://buzzerbeater.com">Buzzerbeater</a>, la cual
-              se actualiza haciendo copiar/pegar directamente desde la lista de transferencias, y mediante empleo de
-              expresiones regulares, esta
-              información se traduce para que pueda añadirse.
-            </p>
+            <>
+              <p>
+                App con frontend hecho con <a href={"https://es.react.dev/"}>React</a> y backend hecho con <a
+                href="https://expressjs.com/es/">Express</a>,
+                que consiste en una base de datos actualizable de jugadores del juego online <a
+                href="https://buzzerbeater.com">Buzzerbeater</a>, la cual
+                se actualiza haciendo copiar/pegar directamente desde la lista de transferencias, y mediante empleo de
+                expresiones regulares, esta información se traduce para que pueda añadirse.
+              </p>
+              <p>
+                Dejé el proyecto sin acabar en 2020, habiendo retomado su desarrollo en Marzo de 2024. Actualmente <strong>sigue en desarrollo.</strong>
+              </p>
+            </>
           </Proyecto>
         )
       }
@@ -384,6 +388,7 @@ const Proyectos = (props) => {
     <article className={'proyectos'}>
       <h2>PROYECTOS</h2>
       <h3>LABORALES</h3>
+
       <section className={'proyectos-seccion-ordenar'}>
         <small>Ordenar por...</small>
         <label className={'proyectos-label-ordenar'}>
@@ -395,10 +400,13 @@ const Proyectos = (props) => {
           <input type="radio" name={"laborales"} className={'proyectos-radio-ordenar'} onClick={() => setSortFactor(factors.relevance)} />
         </label>
       </section>
+
       <section className={'proyectos-list'}>
         {sortProjectsBy(sortFactor, proyectos.laborales)?.map((proj) => proj.html)}
       </section>
+
       <h3>PERSONALES</h3>
+
       <section className={'proyectos-seccion-ordenar'}>
         <small>Ordenar por...</small>
         <label className={'proyectos-label-ordenar'}>
@@ -410,6 +418,7 @@ const Proyectos = (props) => {
           <input type="radio" name={"personales"} className={'proyectos-radio-ordenar'} onClick={() => setSortFactorPersonal(factors.relevance)} />
         </label>
       </section>
+
       <section className={'proyectos-list'}>
         {sortProjectsBy(sortFactorPersonal, proyectos.personales)?.map((proj) => proj.html)}
       </section>

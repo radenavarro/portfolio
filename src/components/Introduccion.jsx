@@ -21,7 +21,7 @@ const Introduccion = (props) => {
     background-size: cover;
     opacity: 20%;
     background-attachment: fixed;
-    height: ${textSectionDimensions[1] + 24}px;
+    height: ${textSectionDimensions[1] + 56}px;
     @media (width >= 1100px) {
       height: calc(3em + ${textSectionDimensions[1]}px);
     }
@@ -33,7 +33,7 @@ const Introduccion = (props) => {
     margin: 0 10% 0 10%;
   `
   const AbsoluteFiller = styled.div`
-    height: ${textSectionDimensions[1] + 24}px;
+    height: ${textSectionDimensions[1] + 56}px;
     @media (width >= 1100px) {
       height: calc(3em + ${textSectionDimensions[1]}px);
     }
