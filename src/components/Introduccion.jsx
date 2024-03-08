@@ -40,7 +40,6 @@ const Introduccion = (props) => {
   `
 
   const handleButtonClick = async () => {
-    console.log("bfore")
     try {
       navigate("./proyectos")
     } catch (e) {
