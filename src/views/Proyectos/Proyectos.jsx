@@ -62,6 +62,12 @@ const Proyectos = (props) => {
     ]
   }
 
+  const videos = {
+    npcook: [
+      "https://www.youtube.com/playlist?list=PLw2WnExdxUAY5DEp3EDOMJfybksmsp_dk"
+    ]
+  }
+
   const proyectos = {
     laborales: [
       {
@@ -79,9 +85,6 @@ const Proyectos = (props) => {
               <DevIcon key={"docker"} name={"devicon-docker-plain"} title={"Docker"}/>,
             ]}
             screens={images.npcook}
-            videos={[
-              "https://www.youtube.com/playlist?list=PLw2WnExdxUAY5DEp3EDOMJfybksmsp_dk"
-            ]}
           >
             <p>
               <a
