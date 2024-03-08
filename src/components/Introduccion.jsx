@@ -68,7 +68,7 @@ const Introduccion = (props) => {
             </li>
             <li>
               Quédate aquí si quieres saber más sobre mí o sobre mis proyectos. Si quieres ponerte en contacto conmigo a raíz
-              de dicho trabajo, puedes hacerlo desde la sección de contacto o a través del enlace en la parte superior derecha <FaSmile color={"yellow"}/>.
+              de dicho trabajo, puedes hacerlo desde la sección de contacto o a través del enlace en la parte superior derecha 🙂.
             </li>
           </ul>
           <button className={'button'} onClick={()=>handleButtonClick()}>Echa un vistazo a mi trabajo&emsp;<FaHandPointRight/></button>

@@ -180,8 +180,7 @@ const Habilidades = (props) => {
           comment={(
             <section className={'skillblock-detailpopup'}>
               <small>
-                He trabajado con Zustand como forma de manejar el estado de componentes en mi app <strong>Lista de la compra</strong>, siendo
-                bastante más simple y sencillo de manejar que Redux.
+                He trabajado con Zustand como forma de manejar el estado de componentes en mi app <strong>Lista de la compra</strong>.
               </small>
             </section>
           )}
