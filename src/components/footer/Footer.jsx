@@ -18,7 +18,7 @@ const Footer = (props) => {
   }
 
   return (
-    <footer className={'footer'}>
+    <footer className={'footer'} data-testid={'test-footer'}>
       <section className={'footer-blocks'}>
         <section className={'footer-subsection'}>
           <small>SECCIONES</small>

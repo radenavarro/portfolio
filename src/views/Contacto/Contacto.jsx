@@ -51,7 +51,7 @@ const Contacto = (props) => {
   }
 
   return (
-    <article className={"contacto"}>
+    <article className={"contacto"} data-testid={'test-contacto'}>
       <ToastContainer/>
       <h2>CONTACTO</h2>
       <section className={'contacto-texto'}>

@@ -5,7 +5,7 @@ import SkillBlock from "../../components/SkillBlock";
 const Habilidades = (props) => {
 
   return (
-    <article className={'habilidades'}>
+    <article className={'habilidades'} data-testid={'test-habilidades'}>
       <h2>FRAMEWORKS</h2>
       <section className={'habilidades-grupo slidefrom-left'}>
         <SkillBlock

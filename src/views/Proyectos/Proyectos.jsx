@@ -388,7 +388,7 @@ const Proyectos = (props) => {
   }
 
   return (
-    <article className={'proyectos'}>
+    <article className={'proyectos'} data-testid={'test-proyectos'}>
       <h2>PROYECTOS</h2>
       <h3>LABORALES</h3>
 

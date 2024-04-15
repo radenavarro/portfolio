@@ -19,16 +19,16 @@ const NavbarLite = (props) => {
   }
 
   return (
-    <nav className={'navbar-lite'}>
+    <nav className={'navbar-lite'} data-testid={'test-navbar-lite'}>
       <section className={'navbar-title'}>
         <strong>RADENA</strong>
       </section>
       <Hamburguer/>
       <section className={'navbar-links'}>
-        <Link className={'navbar-item'} to={'/'}>Inicio</Link>
-        <Link className={'navbar-item'} to={'/habilidades'}>Habilidades</Link>
-        <Link className={'navbar-item'} to={'/proyectos'}>Proyectos</Link>
-        <Link className={'navbar-item'} to={'/contacto'}>Contacto</Link>
+        <Link data-testid={'test-link-inicio'} className={'navbar-item'} to={'/'}>Inicio</Link>
+        <Link data-testid={'test-link-habilidades'} className={'navbar-item'} to={'/habilidades'}>Habilidades</Link>
+        <Link data-testid={'test-link-proyectos'} className={'navbar-item'} to={'/proyectos'}>Proyectos</Link>
+        <Link data-testid={'test-link-contacto'} className={'navbar-item'} to={'/contacto'}>Contacto</Link>
       </section>
       <section className={'navbar-social'}>
         <a
