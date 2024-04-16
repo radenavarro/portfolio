@@ -36,13 +36,14 @@ const NavbarLite = (props) => {
           onMouseLeave={() => setCorreo("")}
           onClick={handleCorreoClick}
           href={`mailto:${correo}`}
+          aria-label={"Gmail"}
         >
           <FaGoogle className={'icon'}/>
         </a>
-        <a href={import.meta.env.VITE_GITHUB} target={'_blank'} rel={'noopener noreferrer'}>
+        <a href={import.meta.env.VITE_GITHUB} target={'_blank'} rel={'noopener noreferrer'} aria-label={"Github"}>
           <FaGithub className={'icon'}/>
         </a>
-        <a href={import.meta.env.VITE_LINKEDIN} target={'_blank'} rel={'noopener noreferrer'}>
+        <a href={import.meta.env.VITE_LINKEDIN} target={'_blank'} rel={'noopener noreferrer'} aria-label={"LinkedIn"}>
           <FaLinkedin className={'icon'}/>
         </a>
       </section>
