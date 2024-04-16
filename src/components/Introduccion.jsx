@@ -15,13 +15,14 @@ const Introduccion = (props) => {
   // STYLED COMPONENTS
   const Background = styled.div`
     position: absolute;
-    background-image: url("src/img/intro.webp");
+    background-image: url("src/img/intro850x564.webp");
     width: 100%;
     background-size: cover;
     opacity: 20%;
     background-attachment: fixed;
     height: ${textSectionDimensions[1] + 56}px;
     @media (width >= 1100px) {
+      background-image: url("src/img/intro.webp");
       height: calc(3em + ${textSectionDimensions[1]}px);
     }
   `;

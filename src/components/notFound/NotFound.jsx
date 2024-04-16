@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import React from "react";
 import "./NotFound.scss";
-const notFoundImage = "src/img/notFound.gif";
+const notFoundImage = "src/img/notFound.webp";
 
 const NotFound = () => {
   return (
