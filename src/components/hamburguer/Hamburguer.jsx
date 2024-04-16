@@ -4,7 +4,7 @@ import {styled} from "styled-components";
 import "./Hamburguer.scss";
 import {Link} from "react-router-dom";
 
-const Hamburguer = (props) => {
+const Hamburguer = () => {
 
   const [menuVisible, setMenuVisible] = useState(false);
 
@@ -20,10 +20,10 @@ const Hamburguer = (props) => {
     <nav className={"hamburguer"}>
       <FaBars style={{transform: `rotate(${menuVisible ? "90deg" : "0deg"})`}} className={"hamburguer-icon clickable"} onClick={toggleMenuShow} />
       <HamburguerMenu className={"hamburguer-menu"}>
-        <li><Link className={'navbar-item'} to={'/'}>Inicio</Link></li>
-        <li><Link className={'navbar-item'} to={'/habilidades'}>Habilidades</Link></li>
-        <li><Link className={'navbar-item'} to={'/proyectos'}>Proyectos</Link></li>
-        <li><Link className={'navbar-item'} to={'/contacto'}>Contacto</Link></li>
+        <li><Link className={'navbar-item'} to={'/'} onClick={toggleMenuShow}>Inicio</Link></li>
+        <li><Link className={'navbar-item'} to={'/habilidades'} onClick={toggleMenuShow}>Habilidades</Link></li>
+        <li><Link className={'navbar-item'} to={'/proyectos'} onClick={toggleMenuShow}>Proyectos</Link></li>
+        <li><Link className={'navbar-item'} to={'/contacto'} onClick={toggleMenuShow}>Contacto</Link></li>
       </HamburguerMenu>
     </nav>
   )

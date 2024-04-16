@@ -1,5 +1,4 @@
-import {useEffect, useState} from "react";
-
+import {useEffect, useMemo, useState} from "react";
 
 export const useDimensions = (ref) => {
   const [width, setWidth] = useState(undefined);
@@ -17,5 +16,5 @@ export const useDimensions = (ref) => {
     }
   }, [height])
 
-  return [width, height]
+  return useMemo(() => ([width, height]), [width, height])
 }

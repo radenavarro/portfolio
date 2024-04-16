@@ -1,0 +1,15 @@
+.not-found {
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  section {
+    padding: 32px;
+    background-color: rgb(0 0 0 / 70%);
+  }
+}

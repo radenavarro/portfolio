@@ -16,4 +16,11 @@
       }
     }
   }
+  @media(max-width: 900px) {
+    .introduccion-texto, .introduccion-imagen {
+      h2 {
+        font-size: 1.3em;
+      }
+    }
+  }
 }

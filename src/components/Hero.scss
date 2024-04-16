@@ -10,4 +10,12 @@
   h2 {
     font-size: 2.2em;
   }
+  @media(max-width: 900px) {
+    h1 {
+      font-size: 2.2em;
+    }
+    h2 {
+      font-size: 1.3em;
+    }
+  }
 }
