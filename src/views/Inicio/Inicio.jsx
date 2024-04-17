@@ -1,5 +1,5 @@
 import React from "react";
-import Introduccion from "../../components/Introduccion";
+import Introduccion from "../../components/Inicio/Introduccion";
 import "./Inicio.scss";
 import SobreMi from "../../components/Inicio/SobreMi";
 

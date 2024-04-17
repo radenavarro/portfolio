@@ -23,7 +23,7 @@ const Rating = (
   }
 
   return (
-    <div style={{display: "flex", flexFlow: "row nowrap", alignItems: "center"}}>
+    <div style={{display: "flex", flexFlow: "row nowrap", alignItems: "center", minWidth: 80}}>
       {getStars()}
     </div>
   )

@@ -14,31 +14,6 @@
     flex-flow: row wrap;
     width: 80%;
     margin: 0 auto;
-    .habilidades-bloque {
-      position: relative;
-      width: 33%;
-      @media(max-width: 1280px){
-        width: 50%;
-      }
-      @media(max-width: 900px) {
-        width: 100%;
-      }
-      .habilidades-bloque-encabezado {
-        padding: 0.4em;
-        border-left: 1px solid white;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        border-bottom: 1px solid white;
-        border-right: 4em solid rgba(0,0,0,0);
-        border-top: 0.6em solid rgba(0,0,0,0);
-        >h2 {
-          align-self: center;
-          //flex-grow: 1;
-          margin-left: 0.8em;
-        }
-      }
-    }
   }
 
   .slidefrom-left {

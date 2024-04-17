@@ -25,10 +25,40 @@
 }
 
 .habilidades-bloque {
+  position: relative;
+  width: 33%;
+  @media(max-width: 1280px){
+    width: 50%;
+  }
+  @media(max-width: 900px) {
+    width: 100%;
+  }
+  .habilidades-bloque-encabezado {
+    padding: 0.4em;
+    border-left: 1px solid white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 8px;
+    border-bottom: 1px solid white;
+    border-right: 4em solid rgba(0,0,0,0);
+    border-top: 0.6em solid rgba(0,0,0,0);
+    >h2 {
+      align-self: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      //flex-grow: 1;
+    }
+  }
   summary.habilidades-bloque-encabezado {
     min-height: 50px;
     >* {
       color: white;
+    }
+  }
+  @media (max-width: 900px) {
+    summary.habilidades-bloque-encabezado {
+      border-right: 8px solid rgba(0, 0, 0, 0);
     }
   }
 }

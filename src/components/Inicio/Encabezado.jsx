@@ -1,8 +1,7 @@
 import React from "react";
 import { FaGoogle, FaGithub } from "react-icons/fa6";
 import "./Encabezado.scss";
-import OpenToWork from "./OpenToWork";
-import TimedToggleClass from "./style/TimedToggleClass";
+import TimedToggleClass from "../style/TimedToggleClass";
 
 const Encabezado = (props) => {
 

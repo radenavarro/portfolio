@@ -2,7 +2,7 @@ import React, {useRef} from "react";
 import "./Introduccion.scss";
 import {FaHandPointRight} from "react-icons/fa6";
 import Hero from "./Hero";
-import {useDimensions} from "../hooks/useDimensions";
+import {useDimensions} from "../../hooks/useDimensions";
 import {styled} from "styled-components";
 import {useNavigate} from "react-router-dom";
 
