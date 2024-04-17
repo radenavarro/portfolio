@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import './index.css';
 import './Base.scss';
+import './fonts/static/Montserrat-Regular.ttf';
 import reportWebVitals from './reportWebVitals';
 
 import routes from "./routesConfig";
