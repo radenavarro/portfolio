@@ -2,7 +2,8 @@
 
 .contacto {
   animation: blurredText 900ms linear forwards;
-  padding-top: 3em;
+  padding-top: 4em;
+
   .toast-header {
     display: flex;
     flex-flow: row nowrap;
@@ -17,6 +18,9 @@
     text-align: left;
     ul {
       margin-left: 1em;
+      li {
+        line-height: 1.8em;
+      }
     }
   }
 }

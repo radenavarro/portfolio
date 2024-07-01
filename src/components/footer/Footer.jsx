@@ -21,14 +21,14 @@ const Footer = (props) => {
     <footer className={'footer'} data-testid={'test-footer'}>
       <section className={'footer-blocks'}>
         <section className={'footer-subsection'}>
-          <small>SECCIONES</small>
+          <small><strong>SECCIONES</strong></small>
           <Link to={'/'}><small>Inicio</small></Link>
           <Link to={'/habilidades'}><small>Habilidades</small></Link>
           <Link to={'/proyectos'}><small>Proyectos</small></Link>
           <Link to={'/contacto'}><small>Contacto</small></Link>
         </section>
         <section className={'footer-subsection'}>
-          <small>REDES</small>
+          <small><strong>REDES</strong></small>
           <a href={import.meta.env.VITE_GITHUB}><small>Github</small></a>
           <a href={import.meta.env.VITE_LINKEDIN}><small>LinkedIn</small></a>
           <a

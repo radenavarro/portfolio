@@ -1,18 +1,22 @@
 @import "../../Colores";
 .footer {
-  background-color: $morado;
+  background-color: $moradoOscuro;
   .footer-blocks {
     margin-top: 64px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    //gap: 16px;
-
 
     .footer-subsection {
       display: flex;
       flex-flow: column nowrap;
       padding: 32px;
+      box-sizing: border-box;
+      gap: 0.4em;
+      small {
+        font-size: 0.75em;
+        font-weight: normal;
+      }
     }
     .footer-subsection:first-child {
       border-right: 1px dotted black;

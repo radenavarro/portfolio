@@ -2,9 +2,16 @@
 
 .hero {
   padding: 4em;
+  box-sizing: border-box;
+  height: calc(100dvh - 4em);
   background: -webkit-linear-gradient(#fff, #abf0ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4em;
   .hero-highlight {
     -webkit-text-fill-color: #abf0ff;
   }

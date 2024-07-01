@@ -26,7 +26,7 @@ const SkillBlock = (
     <aside className={`habilidades-bloque ${!!comment ? 'clickable' : ''}`}>
       <details ref={details}>
         <summary className={'habilidades-bloque-encabezado'}>
-          <DevIcon name={icon} size={iconSize} color={iconColor} /> <h2>{skillname}</h2> <Rating value={rating}/>
+          <DevIcon name={icon} size={iconSize} color={iconColor} /> <h3>{skillname}</h3> <Rating value={rating}/>
         </summary>
         {!!comment && !!detailsOpened && (
           <div className={`skillblock-popup`}>

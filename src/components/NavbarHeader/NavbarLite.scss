@@ -3,18 +3,19 @@
 .navbar-lite {
   position: sticky;
   top: 0;
-  height: 40px;
+  height: 58px;
   background-color: black;
   z-index: 1000;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   .navbar-title, .navbar-links, .navbar-social {
     display: flex;
     flex-flow: row nowrap;
     gap: 1em;
     >*{
-      padding: 0.6em;
+      padding: 1.2em;
+      box-sizing: border-box;
     }
   }
   .navbar-links {
@@ -24,7 +25,6 @@
         background-color: $anaranjado;
         color: $blanco;
         text-shadow: 0 0 6px black;
-        transition: all 300ms;
       }
     }
   }
