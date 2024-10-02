@@ -26,6 +26,10 @@
     background-size: cover;
     transform: scaleX(-1);
     margin: 1em;
+    /* Animacion de aparición */
+    animation: ease-out appearBelow both;
+    animation-timeline: view();
+    animation-range: entry 25% cover 40%;
   }
   @media (max-width: 900px) {
     .sobre-mi-img {

@@ -21,6 +21,11 @@ const Introduccion = (props) => {
     opacity: 20%;
     background-attachment: fixed;
     height: ${textSectionDimensions[1] + 56}px;
+    view-timeline-name: --introduccion-imagen;
+    view-timeline-axis: block;
+    animation: linear reveal both;
+    animation-timeline: --introduccion-imagen;
+    animation-range: entry 15% cover 30%;
     @media (width >= 1100px) {
       background-image: url("src/img/intro.webp");
       height: calc(3em + ${textSectionDimensions[1]}px);
@@ -31,6 +36,9 @@ const Introduccion = (props) => {
     position: absolute;
     width: 80%;
     margin: 0 10% 0 10%;
+    animation: linear appearBelow both;
+    animation-timeline: view();
+    animation-range: entry 25% cover 50%;
   `
   const AbsoluteFiller = styled.div`
     height: ${textSectionDimensions[1] + 56}px;

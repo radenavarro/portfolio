@@ -12,6 +12,10 @@
   justify-content: center;
   align-items: center;
   gap: 1.4em;
+  /* Animacion de salida */
+  animation: ease-in-out leaveLeft both;
+  animation-timeline: view();
+  animation-range: exit 10% cover 90%;
   .hero-highlight {
     -webkit-text-fill-color: #abf0ff;
   }

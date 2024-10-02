@@ -1,3 +1,4 @@
+@import "../../animations";
 .introduccion {
   width: 80%;
   margin: 1em auto 0 auto;
@@ -22,5 +23,16 @@
         font-size: 1.3em;
       }
     }
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    clip-path: inset(45% 20% 45% 20%);
+  }
+  to {
+    opacity: 0.2;
+    clip-path: inset(0% 0% 0% 0%);
   }
 }
