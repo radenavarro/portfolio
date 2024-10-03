@@ -17,6 +17,7 @@
       }
     }
   }
+
   @media(max-width: 900px) {
     .introduccion-texto, .introduccion-imagen {
       h2 {
@@ -28,11 +29,18 @@
 
 @keyframes reveal {
   from {
-    opacity: 0;
     clip-path: inset(45% 20% 45% 20%);
   }
   to {
-    opacity: 0.2;
     clip-path: inset(0% 0% 0% 0%);
+  }
+}
+
+@keyframes parallaxY {
+  from {
+    background-position-y: 0%;
+  }
+  to {
+    background-position-y: 100%;
   }
 }

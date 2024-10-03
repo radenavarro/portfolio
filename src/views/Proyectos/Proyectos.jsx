@@ -199,6 +199,47 @@ const Proyectos = (props) => {
     ],
     personales: [
       {
+        relevancia: 8.2,
+        html: (
+          <Proyecto
+            key={'10'}
+            year={2024}
+            header={"Virtual hike"}
+            icons={[
+              <DevIcon key={"android"} name={"devicon-android-plain"} title={"Android"}/>,
+              <DevIcon key={"react"} name={"devicon-react-plain"} title={"React"}/>,
+              <DevIcon key={"typescript"} name={"devicon-typescript-plain"} title={"TypeScript"}/>,
+            ]}
+            links={links.vhike}
+            screens={images.vhike}
+          >
+            <>
+              <p>
+                App hecha con <a href={"https://reactnative.dev/"}>React Native</a> con persistencia en el estado de
+                componentes mediante <a href={'https://zustand-demo.pmnd.rs/'}>Zustand</a> y <a
+                href={"https://github.com/react-native-async-storage/async-storage"}>AsyncStorage</a>.
+              </p>
+              <p>
+                Se trata de un podómetro con la funcionalidad típica (historial de pasos, objetivo semanal...), a la cual además se le 
+                pueden añadir <strong>rutas personalizadas</strong>.
+              </p>
+              <p>
+                Cada ruta consta de puntos intermedios o <em>splits</em>, cuyo comienzo 
+                y duración son totalmente personalizables y definidos por el usuario.
+              </p>
+              <p>
+                Para cada ruta se puede definir una cantidad de días 
+                de límite para ser completada, y cada <em>split</em> viene acompañado por una serie de imagenes de fondo, las cuales también 
+                son personalizables.
+              </p>
+              <p>
+                La app se encuentra actualmente en desarrollo.
+              </p>
+            </>
+          </Proyecto>
+        )
+      },
+      {
         relevancia: 8,
         html: (
           <Proyecto
@@ -267,26 +308,6 @@ const Proyectos = (props) => {
                 <strong>El proyecto sigue en desarrollo</strong>.
               </p>
             </>
-          </Proyecto>
-        )
-      },
-      {
-        relevancia: 3,
-        html: (
-          <Proyecto
-            key={'6'}
-            year={2023}
-            header={"Parallax"}
-            icons={[
-              <DevIcon key={"react"} name={"devicon-react-plain"} title={"React"}/>,
-              <DevIcon key={"sass"} name={"devicon-sass-plain"} title={"Sass"}/>,
-            ]}
-            links={links.parallax}
-          >
-            <p>
-              Componente simple hecho con <a href={"https://es.react.dev/"}>React</a> que genera un efecto de paralaje o
-              parallax en el fondo.
-            </p>
           </Proyecto>
         )
       },

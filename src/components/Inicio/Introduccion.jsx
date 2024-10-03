@@ -13,6 +13,15 @@ const Introduccion = (props) => {
   const navigate = useNavigate();
 
   // STYLED COMPONENTS
+  const BackgroundWrapper = styled.div`
+    position: absolute;
+    width: 100%;
+    height: ${textSectionDimensions[1] + 56}px;
+    animation: linear reveal both;
+    animation-timeline: view();
+    animation-range: entry 15% cover 30%;
+
+  `;
   const Background = styled.div`
     position: absolute;
     background-image: url("src/img/intro850x564.webp");
@@ -23,9 +32,9 @@ const Introduccion = (props) => {
     height: ${textSectionDimensions[1] + 56}px;
     view-timeline-name: --introduccion-imagen;
     view-timeline-axis: block;
-    animation: linear reveal both;
-    animation-timeline: --introduccion-imagen;
-    animation-range: entry 15% cover 30%;
+    animation: linear parallaxY both;
+    animation-timeline: scroll();
+
     @media (width >= 1100px) {
       background-image: url("src/img/intro.webp");
       height: calc(3em + ${textSectionDimensions[1]}px);
@@ -60,7 +69,9 @@ const Introduccion = (props) => {
       <Hero/>
       <br/>
       <div>
-        <Background className={'introduccion-imagen'}></Background>
+        <BackgroundWrapper className={'introduccion-imagen-wrapper'}>
+          <Background className={'introduccion-imagen'}></Background>
+        </BackgroundWrapper>
         <WelcomeText className={'introduccion-texto'} ref={textSection}>
           <h2>BIENVENID@</h2>
           <ul>
