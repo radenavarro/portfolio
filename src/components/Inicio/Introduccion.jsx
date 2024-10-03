@@ -34,10 +34,11 @@ const Introduccion = (props) => {
     view-timeline-axis: block;
     animation: linear parallaxY both;
     animation-timeline: scroll();
+    animation-range: cover;
 
     @media (width >= 1100px) {
       background-image: url("src/img/intro.webp");
-      height: calc(3em + ${textSectionDimensions[1]}px);
+      height: calc(32px + ${textSectionDimensions[1]}px);
     }
   `;
 
@@ -45,9 +46,16 @@ const Introduccion = (props) => {
     position: absolute;
     width: 80%;
     margin: 0 10% 0 10%;
-    animation: linear appearBelow both;
-    animation-timeline: view();
-    animation-range: entry 25% cover 50%;
+    > ul {
+      animation: linear fadeIn both;
+      animation-timeline: view();
+      animation-range: entry 25% cover 50%;
+    }
+    > h2, button {
+      animation: linear fadeIn both;
+      animation-timeline: view();
+      animation-range: entry 15% cover 25% !important;
+    }
   `
   const AbsoluteFiller = styled.div`
     height: ${textSectionDimensions[1] + 56}px;
