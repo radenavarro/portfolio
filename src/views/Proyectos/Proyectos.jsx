@@ -26,6 +26,18 @@ const Proyectos = (props) => {
         src: "./src/img/proyectos/resultados.png",
         alt: "Imagen Resultados"
       }
+    ],
+    platformer: [
+      {
+        src: "./src/img/proyectos/platformer.gif",
+        alt: "Imagen Platformer"
+      }
+    ],
+    vHike: [
+      {
+        src: "./src/img/proyectos/virtual_hike.jpg",
+        alt: "Imagen Virtual Hike"
+      }
     ]
   };
 
@@ -210,8 +222,8 @@ const Proyectos = (props) => {
               <DevIcon key={"react"} name={"devicon-react-plain"} title={"React"}/>,
               <DevIcon key={"typescript"} name={"devicon-typescript-plain"} title={"TypeScript"}/>,
             ]}
-            links={links.vhike}
-            screens={images.vhike}
+            links={links.vHike}
+            screens={images.vHike}
           >
             <>
               <p>
@@ -270,6 +282,36 @@ const Proyectos = (props) => {
               <p>
                 La app tiene <strong>tanto modo claro como modo oscuro</strong>, los cuales dependen del modo del
                 teléfono.
+              </p>
+            </>
+          </Proyecto>
+        )
+      },
+      {
+        relevancia: 7.5,
+        html: (
+          <Proyecto
+            key={'11'}
+            year={2024}
+            header={"Platformer"}
+            icons={[
+              <DevIcon key={"react"} name={"devicon-react-plain"} title={"React"}/>,
+              <DevIcon key={"typescript"} name={"devicon-typescript-plain"} title={"TypeScript"}/>,
+            ]}
+            links={links.platformer}
+            screens={images.platformer}
+          >
+            <>
+              <p>
+                Se trata de mi primera incursión en la creación de un motor de videojuegos.
+              </p>
+              <p>
+                En este proyecto he intentado crear un game loop básico de juego de plataformas, en el cual el personaje se puede 
+                mover, puede saltar, y colisiona con el escenario. También se ha implementado una cámara centrada en el personaje, 
+                y el escenario se puede modificar mediante plantilla.
+              </p>
+              <p>
+                El proyecto está hecho con <a href={"https://react.dev/"}>React</a>, utilizando Typescript.
               </p>
             </>
           </Proyecto>
